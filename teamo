@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+    <style>
+        /* Estilos generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        /* Fondo con corazones animados (GIF) */
+        body {
+            background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTgwa3N0aGZnNmNkemQ4aXV0dnZnanltdGl0ZDNmcm8wcXU5bmJ4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4y9wmaOVL189Ze7vkO/giphy.gif'); /* Enlace de un GIF de corazones */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilo del mensaje */
+        .mensaje {
+            text-align: center;
+            color: #ff1493; /* Color rosa */
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: latido 1.5s infinite;
+        }
+
+        /* Animación de latido */
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje">
+        ¡Te amo!
+    </div>
+</body>
+</html>
